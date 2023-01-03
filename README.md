@@ -1,1 +1,1 @@
-# React_TS_GitHub_CardUser
+# Проект GitHub user finder
