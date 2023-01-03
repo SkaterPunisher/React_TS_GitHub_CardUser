@@ -30,7 +30,7 @@ function App() {
     <Container>
       <TheHeader />
       <Search hasError={!user} onSubmit={fetchUser} />
-      {user && <UserCard {...defaultUser} />}
+      {user && <UserCard {...user} />}
     </Container>
   );
 }
