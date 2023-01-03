@@ -5,7 +5,6 @@ export const defaultUser: LocalGithubUser = {
   company: 'Frilans',
   bio: null,
   login: 'SkaterPunisher',
-  id: 105880903,
   avatar: 'https://avatars.githubusercontent.com/u/105880903?v=4',
   name: 'Zykov Artem',
   blog: '',

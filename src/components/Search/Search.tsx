@@ -7,21 +7,21 @@ export type FormFields = {
   username: HTMLInputElement;
 };
 
-export const Search = ({ hasError, onSubmit }: SearchProps) => {
+export const Search = ({ hasError, onSubmit, ...props }: SearchProps) => {
   const handleSubmit = (
     event: React.FormEvent<HTMLFormElement & FormFields>
   ) => {
     event.preventDefault();
     const text = event.currentTarget.username.value;
 
-    if (text) {
+    if (text.trim()) {
       onSubmit(text);
       event.currentTarget.reset();
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete='off'>
+    <form onSubmit={handleSubmit} autoComplete='off' {...props}>
       <div className={styles.search}>
         <label htmlFor='search' className={styles.label}>
           <SearchIcon />
